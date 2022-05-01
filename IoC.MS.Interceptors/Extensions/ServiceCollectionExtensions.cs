@@ -9,7 +9,6 @@ namespace IoC.MS.Interceptors.Extensions;
 public static class ServiceCollectionExtensions
 {
     private static readonly DefaultProxyBuilder ProxyBuilder = new();
-    private static readonly ProxyGenerator ProxyGenerator = new();
 
     public static void Intercept(this IServiceCollection builder, Type serviceType, Type interceptorType)
     {
