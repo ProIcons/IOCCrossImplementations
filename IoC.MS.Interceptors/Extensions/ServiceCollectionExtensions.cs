@@ -26,10 +26,10 @@ public static class ServiceCollectionExtensions
         {
             var concrete = builder.BuildServiceProvider()
                 .GetRequiredService(closedServiceType);
-            Type implType;
 
             Func<IServiceProvider, object> factory = (provider) =>
             {
+                Type implType;
                 var interceptor = provider.GetRequiredService(interceptorType);
 
                 if (closedServiceType.IsInterface)
