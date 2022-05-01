@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="6.3.0" />
+      <PackageReference Include="MediatR.Extensions.Autofac.DependencyInjection" Version="8.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\IoC.Common\IoC.Common.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PotentialEditorConfigFiles Remove="C:\Users\Nikolas\.nuget\packages\dryioc\5.0.1\contentFiles\cs\netstandard2.0\DryIoc\.editorconfig" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <GlobalAnalyzerConfigFiles Remove="C:\Users\Nikolas\.nuget\packages\dryioc\5.0.1\contentFiles\cs\netstandard2.0\DryIoc\.globalconfig" />
+    </ItemGroup>
+
+</Project>
